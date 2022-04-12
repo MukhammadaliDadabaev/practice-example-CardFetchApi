@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #0b020f;
+  color: aliceblue;
+}
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: rgb(228, 192, 149);
+}
+p {
+  padding: 0.5rem;
+  font-size: 2.5rem;
+}
+/* header styles */
+header {
+  height: 65vh;
+}
+.card-header {
+  padding: 1.5rem;
+  text-align: center;
+}
+.header-img {
+  height: 55vh;
+  clip-path: polygon(0 0, 48% 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  background-image: url("https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* cards styles */
+.cards {
+  width: 95%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 32%;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card-body {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+/* footer styles */
+.card-footer {
+  height: 10vh;
+  text-align: center;
+}
+.card-footer h3 {
+  padding-top: 1.5rem;
+}
+.footer-img {
+  height: 60vh;
+  clip-path: polygon(0 7%, 48% 0, 100% 7%, 100% 100%, 0 100%, 0% 50%);
+  background-image: url("https://images.unsplash.com/photo-1453133451515-5ff7c1d0d63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Responsive styles */
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 45%;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .card {
+    width: 95%;
+    margin-top: 7rem;
+  }
+  .card-body {
+    margin-top: 1rem;
+  }
+}
